@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> HTML/JavaScript examples </title>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script type ="text/javascript" src="harmonic.js"> </script>
+</head>
+
+<body>
+
+<h1> Harmonic Chart </h1>
+
+Amplitude: <input type="number" name="amplitude" id="amplitude" value = 2> [-] <br>
+Phase: <input type="number" name="phase" id="phase" value = 90> [&#176] <br>
+Signal period: <input type="number" name="signalPeriod" id="signalPeriod" value = 2> [s] <br>
+Sampling period: <input type="number" name="samplingPeriod" id="samplingPeriod" value = 100> [ms] <br>
+Mass: <input type="number" name="mass" id="mass" value = 1> [kg] <br>
+Const k: <input type="number" name="constK" id="constK" value = 100> [-] <br>
+
+<output name="result" id = "result"></output>
+
+<button onclick ="harmonicFunction()"> Chart </button>
+<button onclick ="removeData()"> Chart remove </button>
+
+<div>
+  <canvas id="myChart"></canvas>
+</div>
+
+	<!-- Chart.js requires use of styles to set size! -->
+	<div style="height:10cm; width:15cm">
+		<canvas id="chart"></canvas>
+	</div>
+
+</body>
+
+</html>

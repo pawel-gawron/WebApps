@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> HTML/JavaScript examples </title>
+<script type ="text/javascript" src="unitCalculation.js"> </script>
+</head>
+
+<body>
+
+<h1> Measurements calcultor </h1>
+Input field
+
+<br>
+<input type="number" name="velocityValue" id="velocityValue" value = 0>
+
+<select name="unitsInput" id="unitsInput">
+  <option value="rpm" name="unit">rpm</option>
+  <option value="rps" name="unit">rps</option>
+  <option value="rad/s" name="unit">rad/s</option>
+  <option value="rad/min" name="unit">rad/min</option>
+</select>
+<br>
+
+Output field<br>
+
+<output name="result" id = "resultVelocity"></output>
+
+<select name="unitsOutput" id="unitsOutput">
+  <option value="rpm">rpm</option>
+  <option value="rps">rps</option>
+  <option value="rad/s">rad/s</option>
+  <option value="rad/min">rad/min</option>
+</select>
+<br>
+
+<button onclick ="unitCalculationFunction()"> Calculate </button>
+
+</body>
+
+</html>

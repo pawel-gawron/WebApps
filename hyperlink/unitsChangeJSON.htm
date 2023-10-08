@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> HTML/JavaScript examples </title>
+<script type ="text/javascript" src="unitCalculationJSON.js"> </script>
+</head>
+
+<body>
+
+<h1> Measurements calcultor </h1>
+Input field
+
+<br>
+<input type="text" name="velocityValue" id="velocityValue" value = "{&quot valueInput &quot : 10, &quot inputUnit &quot : &quot rpm &quot , &quot outputUnit &quot : &quot rps &quot }" size = 60>
+<br>
+
+Output field<br>
+
+<output name="result" id = "resultVelocity"></output>
+
+<br>
+
+<button onclick ="unitCalculationFunctionJSON()"> Calculate </button>
+
+<table>
+  <tr>
+    <th>Vaelocity Unit Type</th>
+  </tr>
+  <tr>
+    <td>rpm</td>
+  </tr>
+  <tr>
+    <td>rps</td>
+  </tr>
+    <tr>
+    <td>rad/s</td>
+  </tr>
+    <tr>
+    <td>rad/min</td>
+  </tr>
+</table>
+
+</body>
+
+</html>
